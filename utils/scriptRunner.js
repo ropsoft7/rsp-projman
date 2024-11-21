@@ -4,7 +4,7 @@ const rsp = new RSp();
 
 function runScript(scriptPath) {
 
-  const log = rsp.exec(`bash ${scriptPath}`).value;
+  const log = rsp.exec(`${scriptPath}`).value;
   
   console.log(log, log);
 
