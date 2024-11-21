@@ -6,7 +6,8 @@
   "main": "cli.mjs",
   "author": "@ropsoft",
   "scripts": {
-    "start": "node cli.mjs"
+    "start": "node cli.mjs",
+    "sync-install": "git add .; git commit -m sync; git push origin main; sudo npm install -g https://github.com/ropsoft7/rsp-projman"
   },
   "bin": {
     "rsp.dev.projman": "cli.mjs",
