@@ -4,7 +4,7 @@ import { join } from 'path';
 function listScripts(directory) {
   try {
     const files = readdirSync(directory);
-    return files.filter(file => file.endsWith('.sh'));
+    return files;
   } catch (err) {
     console.error(`Erro ao listar scripts: ${err.message}`);
     return [];
